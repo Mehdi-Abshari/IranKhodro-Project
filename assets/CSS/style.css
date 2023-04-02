@@ -13,7 +13,7 @@
   list-style: none;
   font-family: ;
 }
-
+/* -+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- */
 /* Header Style */
 header {
   position: fixed;
@@ -28,14 +28,12 @@ header {
 }
 /* Header logo Style */
 header .logo {
-  position: relative;
   color: #fff;
   font-weight: 700;
   font-size: 30px;
 }
 /* Header navigation bar Style */
 header ul {
-  position: relative;
   display: flex;
   gap: 40px;
 }
@@ -50,11 +48,70 @@ header ul > li:first-of-type a,
 header ul > li:hover a {
   color: #0094ff;
 }
-
+/* -+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- */
 /* Main sections Style */
 main #homePage {
-  position: relative;
   background-color: #222;
   width: 100%;
   min-height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px;
+  position: relative;
+}
+
+main #homePage::before {
+    content: '';
+    position: absolute;
+    right: 50px;
+    bottom: 280px;
+    width: 50vw;
+    height: 25vw;
+    background-color: #0094ff;
+    border-top-right-radius: 25vw;
+    border-top-left-radius: 25vw;
+}
+/* home page content Style */
+#homePage .content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 650px;
+  z-index: 1;
+  position: relative;
+}
+/* home page title Style */
+#homePage .content h2 {
+  font-size: 60px;
+  color: #0094ff;
+}
+/* home page paragraph Style */
+#homePage .content p {
+  color: #fff;
+  font-size: 19.2px;
+  line-height: 1.6;
+}
+#homePage .content .homeBtn {
+  display: inline-block;
+  font-size: 20px;
+  max-width: 200px;
+  background-color: #0094ff;
+  color: #222;
+  text-align: center;
+  padding: 18px 30px;
+  font-weight: 500;
+  margin-top: 10px;
+}
+/* home page image Style */
+#homePage .car {
+    position: absolute;
+    right: 200px;
+    max-height: 90vh;
+}
+/* -+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- */
+main #service {
+    position: relative;
+    background-color: #34353a;
+    min-height: 100vh;
 }
