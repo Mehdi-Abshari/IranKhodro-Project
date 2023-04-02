@@ -11,6 +11,7 @@
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
+  scroll-behavior: smooth;
   font-family: ;
 }
 /* -+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- */
@@ -25,6 +26,7 @@ header {
   justify-content: space-between;
   align-items: center;
   z-index: 1;
+  backdrop-filter: blur(20px);
 }
 /* Header logo Style */
 header .logo {
@@ -49,7 +51,7 @@ header ul > li:hover a {
   color: #0094ff;
 }
 /* -+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- */
-/* Main sections Style */
+/* home page sections Style */
 main #homePage {
   background-color: #222;
   width: 100%;
@@ -58,19 +60,20 @@ main #homePage {
   justify-content: space-between;
   align-items: center;
   padding: 100px;
+  z-index: -1;
   position: relative;
 }
-
+/* home page image background Style */
 main #homePage::before {
-    content: '';
-    position: absolute;
-    right: 50px;
-    bottom: 280px;
-    width: 50vw;
-    height: 25vw;
-    background-color: #0094ff;
-    border-top-right-radius: 25vw;
-    border-top-left-radius: 25vw;
+  content: "";
+  position: absolute;
+  right: 50px;
+  bottom: 0px;
+  width: 50vw;
+  height: 25vw;
+  background-color: #0094ff;
+  border-top-right-radius: 25vw;
+  border-top-left-radius: 25vw;
 }
 /* home page content Style */
 #homePage .content {
@@ -92,6 +95,7 @@ main #homePage::before {
   font-size: 19.2px;
   line-height: 1.6;
 }
+/* home page button Style */
 #homePage .content .homeBtn {
   display: inline-block;
   font-size: 20px;
@@ -105,13 +109,18 @@ main #homePage::before {
 }
 /* home page image Style */
 #homePage .car {
-    position: absolute;
-    right: 200px;
-    max-height: 90vh;
+  position: absolute;
+  bottom: 200px;
+  right: 200px;
+  max-height: 90vh;
 }
 /* -+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- */
-main #service {
-    position: relative;
-    background-color: #34353a;
-    min-height: 100vh;
+/* Main sections Style */
+main #service,
+main #profile,
+main #contact {
+  position: relative;
+  background-color: #34353a;
+  min-height: 100vh;
+  padding: 120px 100px;
 }
