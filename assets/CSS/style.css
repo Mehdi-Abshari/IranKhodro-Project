@@ -9,6 +9,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
   font-family: ;
 }
 
@@ -26,5 +28,33 @@ header {
 }
 /* Header logo Style */
 header .logo {
-    
+  position: relative;
+  color: #fff;
+  font-weight: 700;
+  font-size: 30px;
+}
+/* Header navigation bar Style */
+header ul {
+  position: relative;
+  display: flex;
+  gap: 40px;
+}
+/* Header navigation bar links Style */
+header ul > li > a {
+  color: #fff;
+  font-weight: 500;
+  font-size: 20px;
+}
+/* Active navigation bar links Style */
+header ul > li:first-of-type a,
+header ul > li:hover a {
+  color: #0094ff;
+}
+
+/* Main sections Style */
+main #homePage {
+  position: relative;
+  background-color: #222;
+  width: 100%;
+  min-height: 100vh;
 }
