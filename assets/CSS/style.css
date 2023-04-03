@@ -1,7 +1,7 @@
 /* Fonts */
 @font-face {
-  font-family: ;
-  src: url();
+  font-family: IRANSansXV;
+  src: url('../Fonts/IRANSansXV.ttf');
 }
 
 /* All Selector */
@@ -12,7 +12,7 @@
   text-decoration: none;
   list-style: none;
   scroll-behavior: smooth;
-  font-family: ;
+  font-family: IRANSansXV;
 }
 /* -+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- */
 /* Header Style */
@@ -25,14 +25,12 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 1;
+  z-index: 10;
   backdrop-filter: blur(20px);
 }
 /* Header logo Style */
-header .logo {
-  color: #fff;
-  font-weight: 700;
-  font-size: 30px;
+header .logo img {
+  max-width: 60px;
 }
 /* Header navigation bar Style */
 header ul {
@@ -60,7 +58,6 @@ main #homePage {
   justify-content: space-between;
   align-items: center;
   padding: 100px;
-  z-index: -1;
   position: relative;
 }
 /* home page image background Style */
@@ -96,7 +93,7 @@ main #homePage::before {
   line-height: 1.6;
 }
 /* home page button Style */
-#homePage .content .homeBtn {
+.btn {
   display: inline-block;
   font-size: 20px;
   max-width: 200px;
@@ -147,11 +144,12 @@ main #contact {
   color: #aaa;
   font-size: 17.6px;
   line-height: 1.5;
+  margin-top: 15px;
 }
 /* Service section content Style */
 #service .content {
   display: grid;
-  grid-template-columns: repeat(4,1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-gap: 20px;
   margin: 40px 0;
 }
@@ -163,7 +161,9 @@ main #contact {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  gap: 20px;
   border: 2px solid #2e2f34;
+  cursor: pointer;
 }
 /* Content service box hovering Style */
 #service .content .serviceBox:hover {
@@ -174,8 +174,19 @@ main #contact {
   max-width: 100px;
   filter: invert(1);
   opacity: 0.5;
+  transition: all 0.5s;
 }
 /* Service box svg hovering Style */
 #service .content .serviceBox:hover svg {
   opacity: 1;
+}
+/* Service box title style */
+#service .content .serviceBox h3 {
+  font-weight: 500;
+  color: #0094ff;
+}
+/* Service box button Style */
+#service .centerBtn {
+  width: 100%;
+  text-align: center;
 }
