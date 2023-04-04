@@ -1,7 +1,7 @@
 /* Fonts */
 @font-face {
   font-family: IRANSansXV;
-  src: url('../Fonts/IRANSansXV.ttf');
+  src: url("../Fonts/IRANSansXV.ttf");
 }
 
 /* All Selector */
@@ -113,9 +113,9 @@ main #homePage::before {
 }
 /* -+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- */
 /* Main sections Style */
-main #service,
-main #profile,
-main #contact {
+#service,
+#products,
+#contact {
   position: relative;
   background-color: #34353a;
   min-height: 100vh;
@@ -124,21 +124,21 @@ main #contact {
   justify-content: center;
   flex-direction: column;
 }
-/* Service section text Style */
-#service .secText {
+/* Section text Style */
+.secText {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-/* Service section title Style */
-#service .secText h2 {
+/* Section title Style */
+.secText h2 {
   font-size: 48px;
   color: #fff;
 }
-/* Service section paragraph Style */
-#service .secText p {
+/* Section paragraph Style */
+.secText p {
   max-width: 700px;
   text-align: center;
   color: #aaa;
@@ -185,8 +185,10 @@ main #contact {
   font-weight: 500;
   color: #0094ff;
 }
-/* Service box button Style */
-#service .centerBtn {
+/* Center button Style */
+.centerBtn {
   width: 100%;
   text-align: center;
 }
+/* -+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- */
+
