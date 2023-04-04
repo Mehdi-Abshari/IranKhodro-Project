@@ -207,3 +207,49 @@ main #homePage::before {
 #products .content .imgBox img {
   max-width: 100%;
 }
+/* -+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- */
+/* Contact content Style */
+#contact .content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  margin: 40px 0;
+}
+/* Contact content link Style */
+#contact .content a {
+  background-color: #2e2f34;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 19.2px;
+  color: #fff;
+  transition: all 0.5s;
+}
+/* Contact content link hovering Style */
+#contact .content a:hover {
+  background-color: #0094ff;
+}
+/* Contact content icon Style */
+#contact .content a ion-icon {
+  color: #0094ff;
+  font-size: 24px;
+  margin-right: 10px;
+  transition: all 0.5s;
+}
+/*  */
+#contact .content a:hover,
+#contact .content a:hover ion-icon {
+  color: #222;
+}
+/*  */
+.copyRight {
+  margin-top: 150px;
+  color: #aaa;
+  font-size: 17.6px;
+}
+/*  */
+.copyRight a {
+  color: #0094ff;
+  text-decoration: underline;
+}
