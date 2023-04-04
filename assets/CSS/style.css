@@ -191,4 +191,19 @@ main #homePage::before {
   text-align: center;
 }
 /* -+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- */
-
+/* Products section Style */
+#products {
+  background-color: #2e2f34;
+  text-align: center;
+}
+/* Products content style */
+#products .content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  margin: 40px 0;
+}
+/* Products content image Style */
+#products .content .imgBox img {
+  max-width: 100%;
+}
