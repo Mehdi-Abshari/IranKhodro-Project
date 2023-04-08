@@ -1,6 +1,6 @@
 // --> Variables
 // Selecting li in navigation bar
-let list = document.querySelectorAll("nav ul li"),
+const list = document.querySelectorAll("nav ul li"),
   menuToggle = document.querySelector(".menuToggle"),
   header = document.querySelector("header");
 
@@ -24,6 +24,6 @@ function active() {
 }
 // Function for add 'active' class to header
 function toggleMenu(){
-  // add 'active' to header
+  // add 'active' class to header
   header.classList.toggle('active');
 }
