@@ -44,7 +44,7 @@ header ul > li > a {
   font-size: 20px;
 }
 /* Active navigation bar links Style */
-header ul > li:first-of-type a,
+header ul > .active a,
 header ul > li:hover a {
   color: #0094ff;
 }
