@@ -253,3 +253,132 @@ footer .copyRight a {
   color: #0094ff;
   text-decoration: underline;
 }
+/* -+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- */
+/* Responsive CSS code */
+/* Responsive for 1540px screen view port */
+@media (max-width: 1540px) {
+  #homePage .car {
+    position: absolute;
+    right: 100px;
+    width: 600px;
+  }
+}
+/* Responsive for 1400px screen view port */
+@media (max-width: 1400px) {
+  #homePage .car {
+    position: absolute;
+    right: 50px;
+    width: 500px;
+  }
+}
+/* Responsive for 1300px screen view port */
+@media (max-width: 1300px) {
+  #homePage .car {
+    position: absolute;
+    right: 20px;
+    bottom: 50px;
+  }
+}
+/* Responsive for 900px screen view port */
+@media (max-width: 900px) {
+  header {
+    padding: 20px 50px;
+  }
+  #homePage {
+    padding: 150px 50px;
+    flex-direction: column;
+    padding-bottom: 0;
+  }
+  #homePage .content h2 {
+    font-size: 50px;
+  }
+  .btn {
+    max-width: 160px;
+    padding: 10px 20px;
+  }
+  #homePage .car {
+    position: absolute;
+    height: 50vh;
+    right: 50px;
+    bottom: 0;
+    width: 400px;
+  }
+  .secText h2 {
+    font-size: 32px;
+  }
+  #service,
+  #products,
+  #contact {
+    padding: 100px 50px 50px;
+  }
+  main #service .content,
+  main #products .content,
+  footer #contact .content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  header ul {
+    display: none;
+  }
+  .menuToggle {
+    position: relative;
+    width: 30px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  .menuToggle::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    transform: translateY(-10px);
+    transition: 0.5s;
+    box-shadow: 0 10px #fff;
+  }
+}
+.menuToggle::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  transform: translateY(10px);
+  transition: 0.5s;
+}
+header.active .menuToggle::before {
+  transform: translateY(0px) rotate(45deg);
+  box-shadow: 0 0 #fff;
+}
+header.active .menuToggle::after {
+  transform: translateY(0px) rotate(315deg);
+}
+/* Responsive for 700px screen view port */
+@media (max-width: 700px) {
+  #homePage .content h2 {
+    font-size: 48px;
+  }
+  main #homePage::before {
+    width: 80vw;
+    height: 40vw;
+    border-top-right-radius: 80vw;
+    border-top-left-radius: 80vw;
+  }
+  #homePage .car {
+    position: absolute;
+    right: 110px;
+    bottom: 50px;
+    height: 40vh;
+  }
+
+  main #service .content,
+  main #products .content,
+  footer #contact .content {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  footer #contact .content a {
+    height: 80px;
+  }
+}
